@@ -1,0 +1,21 @@
+html {
+    font: 1.1em "MS Gothic";
+    color: white;
+}
+
+body {
+    background: linear-gradient(90deg,rgb(0,5,50),rgb(0,65,110));
+    margin: 1em;
+}
+
+li {
+    padding-bottom: 0.5em
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+a:hover {
+    color: cyan;
+}
