@@ -1,0 +1,137 @@
+body {
+    font-family: Helvetica;
+    background: radial-gradient(forestgreen, darkgreen);
+    color: white;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-top: 2em;
+}
+
+table {
+    color: black;
+    float: left;
+    background-color: white;
+    margin: 0 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.tableButton {
+    cursor: pointer;
+    background-color: chartreuse;
+}
+
+.tableButton:hover {
+    background-color: yellow;
+}
+
+.tableClicked {
+    background-color: white;
+    color: white;
+    cursor: default;
+}
+
+button {
+    font-size: medium;
+    margin: 0 5px;
+}
+
+img {
+    margin: 20px 5px;
+    cursor: pointer;
+}
+
+.diceOne {
+    width: 68px;
+    height: 68px;
+    background: url("diceWhite_border.png") 0 -136px;
+}
+
+.diceTwo {
+    width: 68px;
+    height: 68px;
+    background: url("diceWhite_border.png") -68px -68px;
+}
+
+.diceThree {
+    width: 68px;
+    height: 68px;
+    background: url("diceWhite_border.png") -68px 0;
+}
+
+.diceFour {
+    width: 68px;
+    height: 68px;
+    background: url("diceWhite_border.png") -68px -136px;
+}
+
+.diceFive {
+    width: 68px;
+    height: 68px;
+    background: url("diceWhite_border.png") 0 -68px;
+}
+
+.diceSix {
+    width: 68px;
+    height: 68px;
+    background: url("diceWhite_border.png") 0 0;
+}
+
+.diceOneRed {
+    width: 68px;
+    height: 68px;
+    background: url("diceRed_border.png") 0 -136px;
+}
+
+.diceTwoRed {
+    width: 68px;
+    height: 68px;
+    background: url("diceRed_border.png") -68px -68px;
+}
+
+.diceThreeRed {
+    width: 68px;
+    height: 68px;
+    background: url("diceRed_border.png") -68px 0;
+}
+
+.diceFourRed {
+    width: 68px;
+    height: 68px;
+    background: url("diceRed_border.png") -68px -136px;
+}
+
+.diceFiveRed {
+    width: 68px;
+    height: 68px;
+    background: url("diceRed_border.png") 0 -68px;
+}
+
+.diceSixRed {
+    width: 68px;
+    height: 68px;
+    background: url("diceRed_border.png") 0 0;
+}
+
+#backToMain, #backToMain :link, #backToMain :visited {
+	background: linear-gradient(90deg,rgb(0,5,50),rgb(0,65,110));
+	text-align: center;
+	color: white;
+	font: 1.1em monospace;
+	line-height: 2em;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid white;
+}
+
+#backToMain :hover {
+	color: cyan;
+}

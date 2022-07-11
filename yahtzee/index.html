@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yahtzee</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header id="backToMain"><a href="../index.html">Tagasi pealehele</a></header>
+<h1>Yahtzee</h1>
+<table>
+    <tr>
+        <th>Upper section</th>
+        <th>Points</th>
+        <th>+</th>
+    </tr>
+    <tr>
+        <td>Aces</td>
+        <td id="points0"></td>
+        <td id="potential0" class="tableClicked" onclick="addPoints(0)"></td>
+    </tr>
+    <tr>
+        <td>Twos</td>
+        <td id="points1"></td>
+        <td id="potential1" class="tableClicked" onclick="addPoints(1)"></td>
+    </tr>
+    <tr>
+        <td>Threes</td>
+        <td id="points2"></td>
+        <td id="potential2" class="tableClicked" onclick="addPoints(2)"></td>
+    </tr>
+    <tr>
+        <td>Fours</td>
+        <td id="points3"></td>
+        <td id="potential3" class="tableClicked" onclick="addPoints(3)"></td>
+    </tr>
+    <tr>
+        <td>Fives</td>
+        <td id="points4"></td>
+        <td id="potential4" class="tableClicked" onclick="addPoints(4)"></td>
+    </tr>
+    <tr>
+        <td>Sixes</td>
+        <td id="points5"></td>
+        <td id="potential5" class="tableClicked" onclick="addPoints(5)"></td>
+    </tr>
+    <tr>
+        <td>Bonus</td>
+        <td id="pointsBonus"></td>
+        <td class="tableClicked">+++</td>
+    </tr>
+    <tr>
+        <th>Lower section</th>
+        <th>Points</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>3-Of-A-Kind</td>
+        <td id="points6"></td>
+        <td id="potential6" class="tableClicked" onclick="addPoints(6)"></td>
+    </tr>
+    <tr>
+        <td>4-Of-A-Kind</td>
+        <td id="points7"></td>
+        <td id="potential7" class="tableClicked" onclick="addPoints(7)"></td>
+    </tr>
+    <tr>
+        <td>Full House</td>
+        <td id="points8"></td>
+        <td id="potential8" class="tableClicked" onclick="addPoints(8)"></td>
+    </tr>
+    <tr>
+        <td>Small Straight</td>
+        <td id="points9"></td>
+        <td id="potential9" class="tableClicked" onclick="addPoints(9)"></td>
+    </tr>
+    <tr>
+        <td>Large Straight</td>
+        <td id="points10"></td>
+        <td id="potential10" class="tableClicked" onclick="addPoints(10)"></td>
+    </tr>
+    <tr>
+        <td>Yahtzee</td>
+        <td id="points11"></td>
+        <td id="potential11" class="tableClicked" onclick="addPoints(11)"></td>
+    </tr>
+    <tr>
+        <td>Chance</td>
+        <td id="points12"></td>
+        <td id="potential12" class="tableClicked" onclick="addPoints(12)"></td>
+    </tr>
+    <tr>
+        <th>Total Points</th>
+        <th id="pointsTotal"></th>
+        <th></th>
+    </tr>
+</table>
+<div>
+<h2>New Game
+    <button onclick="startGame(3)">3 Moves</button>
+    <button onclick="startGame(7)">7 Moves</button>
+    <button onclick="startGame(13)">13 Moves</button>
+</h2>
+</div>
+<div id="midGame">
+    <img class="diceOne" src="transparent_die.png" width="1" height="1">
+    <img class="diceTwo" src="transparent_die.png" width="1" height="1">
+    <img class="diceThree" src="transparent_die.png" width="1" height="1">
+    <img class="diceFour" src="transparent_die.png" width="1" height="1">
+    <img class="diceFive" src="transparent_die.png" width="1" height="1">
+    <button onclick="rollDice()" style="display: block">Roll dice</button>
+    <h3 id="rollsLeft">Rolls left: 3</h3>
+    <h3 id="turnsLeft">Turns left: 13</h3>
+</div>
+<h1 id="gameOver"></h1>
+<script src="game.js"></script>
+</body>
+</html>

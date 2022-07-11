@@ -1,0 +1,53 @@
+body {
+	font-family: Helvetica;
+	background-color: #F0F0FF;
+}
+
+.fancyBG {
+	background: linear-gradient(0, rgb(54,70,93), rgb(0,25,53));
+	background-attachment: fixed;
+	color: white;
+}
+
+.fancyBG :link {
+	color: yellow;
+}
+
+.fancyBG :visited {
+	color: orange;
+}
+
+.fancyBG :hover {
+	color: white;
+}
+
+table {
+	width: 100%;
+	margin-top: 3em;
+}
+
+.smalltable {
+	width: 50%;
+}
+
+.colorful {
+	background-color: #00ABFF;
+	font-size:20px;
+}
+
+#backToMain, #backToMain :link, #backToMain :visited {
+	background: linear-gradient(90deg,rgb(0,5,50),rgb(0,65,110));
+	text-align: center;
+	color: white;
+	font: 1.1em monospace;
+	line-height: 2em;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid white;
+}
+
+#backToMain :hover {
+	color: cyan;
+}
